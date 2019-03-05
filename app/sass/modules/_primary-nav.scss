@@ -1,0 +1,35 @@
+.primary-nav {
+
+   ul {
+      margin: 0;
+      padding: 0;
+      @include clearfix;
+   }
+
+   li {
+      text-align: center;
+      float: left;
+      padding: 0 2rem;
+      list-style: none;
+      margin-top: 3.4rem;
+   }
+
+   a {
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 500;
+      font-size: 1.6rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid rgba($color-primary, 0);
+      transition: all .3s;
+
+      &:hover {
+         padding-bottom: .5rem;
+         border-bottom: 2px solid $color-primary;
+      }
+   }
+
+   &--pull-right {
+      float: right;
+   }
+}

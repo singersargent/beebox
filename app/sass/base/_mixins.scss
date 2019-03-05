@@ -1,0 +1,21 @@
+@mixin clearfix {
+   &::after {
+      content: "";
+      clear: both;
+      display: table;
+   }
+}
+
+@mixin hiddentext {
+   position: absolute;
+   top: 120px;
+   left: 250px;
+   z-index: 0;
+}
+
+@mixin visibletext{
+   position: absolute;
+   top: 120px;
+   left: 250px;
+   z-index: 1;
+} 
