@@ -1,0 +1,30 @@
+.header {
+   background-color: rgba($color-white, .5);
+   width: 100%;
+   height: 9rem;
+
+   &__logo-link {
+      text-indent: -9999px;
+      position: relative;
+   }
+
+   &__logo-text {
+      @include hiddentext;
+   }
+
+   &__logo-graphic {
+      margin-top: 2.1rem;
+      width: 20rem;
+      height: 5rem;
+      display: inline-block;
+      background: url(../../img/logo.png) left center no-repeat;
+      background-size: contain;
+
+   }
+
+   &__btn-container {
+      float: right;
+      margin-top: 2.4rem;
+      margin-left: 2rem;
+   }
+}
