@@ -1,0 +1,44 @@
+.modal {
+   
+   & p {
+      font-size: 1.6rem;
+      line-height: 1.5;
+   }
+
+   &__close {
+      position: absolute;
+      top: -2%;
+      right: 2%;
+      text-decoration: none;
+      font-size: 6rem;
+      color: rgba($color-black, .3);
+      font-weight: 100;
+
+   }
+
+   &__content {
+      width: 75%;
+      max-width: 100rem;
+      height: 70rem;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 60%;
+      left: 50%;
+      background-color: $color-white;
+      border-radius: 3px;
+      box-shadow: 0 .5rem 2rem rgba($color-black, .2);
+   }
+
+   &__left {
+      width: 50%;    
+      height: 100%;
+      float: left;  
+      background: url(../../img/modal-bee.jpg) center center no-repeat;
+      background-size: cover;
+   }
+
+   &__right {
+      width: 50%;
+      float: right;
+   }
+}

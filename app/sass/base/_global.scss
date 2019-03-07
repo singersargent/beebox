@@ -16,9 +16,7 @@ html {
    font-size: 62.5%;
 }
 
-body {
-   box-sizing: border-box;
-}
+
 
 
 // TYPOGRAPHY
@@ -30,4 +28,17 @@ body {
 
 h1, h2, h3, h4 {
    font-family: 'Arapey', serif; 
+}
+
+h2 {
+   font-size: 4.8rem;
+}
+
+a {
+   color: $color-primary;
+   text-decoration: none;
+
+   &:visited, &:hover {
+      color: $color-primary-dark;
+   }
 }

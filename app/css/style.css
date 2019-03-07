@@ -13,14 +13,20 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
-
-body {
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 h1, h2, h3, h4 {
   font-family: 'Arapey', serif; }
+
+h2 {
+  font-size: 4.8rem; }
+
+a {
+  color: #FFBF00;
+  text-decoration: none; }
+  a:visited, a:hover {
+    color: #dfab00; }
 
 .wrapper {
   overflow: hidden;
@@ -88,20 +94,132 @@ h1, h2, h3, h4 {
   background: url(../../img/main-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
-  position: inherit;
-  height: 70rem;
+  height: 100vh;
   width: 100%; }
 
 .btn {
-  background-color: #FFF;
-  color: #FFBF00;
-  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgba(17, 17, 17, 0.3);
   font-size: 1.6rem;
   font-weight: 500;
-  border: 2px solid #FFBF00;
-  display: inline-block;
-  padding: 1rem 1.3rem;
+  text-decoration: none;
+  cursor: pointer;
   transition: all .3s; }
-  .btn:hover {
+  .btn--icon-and-text {
+    text-align: left;
+    font-size: 1.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    height: 5rem;
+    line-height: 5rem; }
+    .btn--icon-and-text .btn__copy {
+      padding-left: 2.5rem; }
+    .btn--icon-and-text .btn__icon-box {
+      text-align: center;
+      color: #FFF;
+      width: 5rem;
+      float: left;
+      height: 100%; }
+      .btn--icon-and-text .btn__icon-box--g {
+        background-image: linear-gradient(to right top, #2C87FC, #00A6FB); }
+      .btn--icon-and-text .btn__icon-box--fb {
+        background-image: linear-gradient(to right top, #355AA0, #345FC8); }
+  .btn--primary-bright {
     background-color: #FFBF00;
-    color: #111; }
+    color: #111;
+    box-shadow: 0px 5px 15px 0px rgba(223, 171, 0, 0.5);
+    border-radius: 100px;
+    border: none;
+    padding: 1.6rem 4rem; }
+    .btn--primary-bright:hover {
+      box-shadow: 0px 5px 30px 0px rgba(223, 171, 0, 0.75); }
+  .btn--primary-inverse {
+    padding: .75rem 2rem;
+    background-color: #FFF;
+    border: 2px solid #FFBF00;
+    color: #FFBF00; }
+    .btn--primary-inverse:hover {
+      background-color: #FFBF00;
+      color: #111; }
+
+.modal p {
+  font-size: 1.6rem;
+  line-height: 1.5; }
+
+.modal__close {
+  position: absolute;
+  top: -2%;
+  right: 2%;
+  text-decoration: none;
+  font-size: 6rem;
+  color: rgba(17, 17, 17, 0.3);
+  font-weight: 100; }
+
+.modal__content {
+  width: 75%;
+  max-width: 100rem;
+  height: 70rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 0.5rem 2rem rgba(17, 17, 17, 0.2); }
+
+.modal__left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: url(../../img/modal-bee.jpg) center center no-repeat;
+  background-size: cover; }
+
+.modal__right {
+  width: 50%;
+  float: right; }
+
+.form {
+  padding: 5rem;
+  padding-right: 6rem; }
+  .form button, .form input {
+    width: 100%; }
+  .form__group {
+    width: 100%;
+    margin-bottom: 1.5rem; }
+  .form__description {
+    margin: 2rem 0; }
+  .form__divider {
+    margin-top: 2rem; }
+    .form__divider span {
+      border-bottom: 1px dashed rgba(17, 17, 17, 0.3);
+      height: 2px;
+      width: 40%;
+      display: inline-block;
+      margin-top: -12px; }
+    .form__divider .line-left {
+      float: left; }
+    .form__divider .line-right {
+      float: right; }
+    .form__divider p {
+      text-align: center;
+      color: rgba(17, 17, 17, 0.3);
+      font-size: 1.4rem; }
+  .form__input {
+    font-size: 1.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 1.5rem 1.75rem;
+    box-sizing: border-box; }
+    .form__input::placeholder {
+      visibility: visible;
+      opacity: 1;
+      transition: all .2s; }
+    .form__input:focus::placeholder {
+      opacity: 0;
+      visibility: hidden; }
+  .form__label {
+    visibility: hidden;
+    opacity: 0; }
+  .form__option {
+    margin-top: 2rem;
+    width: 100%; }

@@ -1,6 +1,6 @@
+@import 'base/variables';
 @import 'base/global';
 @import 'base/mixins';
-@import 'base/variables';
 
 
 @import 'modules/wrapper';
@@ -8,3 +8,5 @@
 @import 'modules/primary-nav';
 @import 'modules/section-honeycomb';
 @import 'modules/btn';
+@import 'modules/modal';
+@import 'modules/sign-up-form';
